@@ -1,0 +1,46 @@
+{
+  "sentMessages": [
+    {
+      "name": "Joh",
+      "message": "Hello everyone!",
+      "age": 24,
+      "id": 1
+    },
+    {
+      "name": "Mary",
+      "message": "Hi friends, wassup",
+      "age": 45,
+      "id": 2
+    },
+    {
+      "name": "Johnny",
+      "message": "Hey everything is fine",
+      "age": 34,
+      "id": 3
+    },
+    {
+      "name": "Silv",
+      "message": "whats the plan for today?",
+      "age": 55,
+      "id": 4
+    }
+  ],
+  "friendsList": [
+    {
+      "name": "Johnny",
+      "age": 34
+    },
+    {
+      "name": "Joh",
+      "age": 24
+    },
+    {
+      "name": "Mary",
+      "age": 45
+    },
+    {
+      "name": "Silv",
+      "age": 55
+    }
+  ]
+}
