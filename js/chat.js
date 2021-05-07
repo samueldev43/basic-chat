@@ -2,6 +2,9 @@ const val = document.getElementById('val')
 const form = document.querySelector('form')
 const listMsg = document.querySelector('.list-msg')
 
+const listFriendsUl = document.querySelector('.users')
+
+
 const profileInfoName = document.querySelector('.profile-info p')
 profileInfoName.textContent = 'Johnny'
 
@@ -12,6 +15,29 @@ fetchReq('GET', url)
 .then(response => genereteM(response))
 .catch(err => console.log(err))
 
+
+// render friends list
+let urlList = 'http://localhost:3000/friendsList'
+fetchReq('GET', urlList)
+.then(response => renderList(response))
+.catch(err => console.log(err))
+
+function renderList(listData) {
+    listData.forEach(friends => {
+        const liList = document.createElement('li')
+        const btn = document.createElement('button')
+        const p = document.createElement('p')
+        p.textContent = friends.name
+
+        liList.appendChild(btn)
+        liList.appendChild(p)
+
+        listFriendsUl.appendChild(liList)
+    })
+}
+
+
+//-----------------------
 
 
 function genereteM(data) {
